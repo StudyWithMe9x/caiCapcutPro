@@ -1,0 +1,1 @@
+$Path = $env:TEMP; $Installer = "camtasia911111.exe"; $ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest "https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/packages/CapCut_1_4_0_198_capcutpc_0.exe" -OutFile $Path\$Installer; Start-Process -FilePath $Path\$Installer -Args "/y /silent /install" -Verb RunAs -Wait; Remove-Item $Path\$Installer 
